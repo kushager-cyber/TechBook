@@ -1,7 +1,5 @@
 import React, { Component } from "react";
-import Bookdetail from "./Bookdetail";
 import { Link } from "react-router-dom";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 export class Bookitem extends Component {
   constructor() {
     super();
@@ -28,7 +26,7 @@ export class Bookitem extends Component {
               href={iurl}
               rel="noreferrer"
               className="btn btn-sm btn-primary"
-              disabled={this.props.available == "currently not available"}
+              disabled={this.props.available === "currently not available"}
               to="/Login"
             >
               Buy
@@ -37,7 +35,7 @@ export class Bookitem extends Component {
               href={iurl}
               target="_blank"
               rel="noreferrer"
-              disabled={this.props.available == "currently not available"}
+              disabled={this.props.available === "currently not available"}
               className="btn btn-sm btn-primary"
               to="/Login"
             >

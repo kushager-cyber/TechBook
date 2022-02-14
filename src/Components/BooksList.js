@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Bookitem from "./Bookitem.js";
 import { books } from "./Data";
-import { Link } from "react-router-dom";
 export default class BooksList extends Component {
   constructor() {
     super();

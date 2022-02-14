@@ -24,7 +24,7 @@ export default class Login extends Component {
   }
   handleLogin() {
     if (
-      this.state.Username == localStorage.getItem("Username") &&
+      this.state.Username === localStorage.getItem("Username") &&
       this.state.Password === localStorage.getItem("Password")
     ) {
       this.setState({ action: "/BooksList" });
@@ -68,8 +68,8 @@ export default class Login extends Component {
                 required="required"
                 onChange={this.handleLogin}
               />{" "}
-              I accept the <a href="#">Terms of Use</a> &amp;{" "}
-              <a href="#">Privacy Policy</a>.
+              I accept the <a href="/">Terms of Use</a> &amp;{" "}
+              <a href="/">Privacy Policy</a>.
             </label>
             <div className="form-group">
               <Link

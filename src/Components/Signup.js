@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navigate } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default class SignUp extends Component {
   constructor(props) {
@@ -91,8 +90,8 @@ export default class SignUp extends Component {
                 <p>
                   <label className="form-check-label">
                     <input type="checkbox" required="required" /> I accept the{" "}
-                    <a href="#">Terms of Use</a> &amp;{" "}
-                    <a href="#">Privacy Policy</a>.
+                    <a href="/">Terms of Use</a> &amp;{" "}
+                    <a href="/">Privacy Policy</a>.
                   </label>
                 </p>
                 <Link
@@ -107,7 +106,7 @@ export default class SignUp extends Component {
             </div>
           </form>
           <div className="text-center">
-            Already have an account? <a href="#">Login here</a>
+            Already have an account? <a href="/">Login here</a>
           </div>
         </div>
       </div>

@@ -89,15 +89,18 @@ export default class SignUp extends Component {
               <div className="col-8 offset-4">
                 <p>
                   <label className="form-check-label">
-                    <input type="checkbox" required="required" /> I accept the{" "}
-                    <a href="/">Terms of Use</a> &amp;{" "}
+                    <input
+                      type="checkbox"
+                      required="required"
+                      onClick={this.handleFormData}
+                    />{" "}
+                    I accept the <a href="/">Terms of Use</a> &amp;{" "}
                     <a href="/">Privacy Policy</a>.
                   </label>
                 </p>
                 <Link
                   type="submit"
                   className="btn btn-primary btn-lg"
-                  // onClick={this.handleFormData}
                   to="/Login"
                 >
                   Sign Up

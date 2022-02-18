@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function Login(props) {
-  let userDetails = useSelector((state) => state.SetTheData.userData);
+  let user = useSelector((state) => state.SetTheData.userData);
 
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
@@ -15,8 +15,8 @@ function Login(props) {
     if (username === "" && password === "") {
       alert("Please enter  username and password!!");
     } else if (
-      userDetails.some((Element) => Element.username === username) &&
-      userDetails.some((Element) => Element.password === password)
+      user.some((Element) => Element.username === username) &&
+      user.some((Element) => Element.password === password)
     ) {
       navigate("/BooksList");
     } else {

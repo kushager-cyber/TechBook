@@ -6,39 +6,46 @@ import { setTheData } from "../Actions";
 
 function Signup() {
   const dispatch = useDispatch();
-  const [userDetails, setUserDetails] = useState({
+  const [user, setuser] = useState({
     name: "",
     username: "",
     email: "",
     password: "",
   });
 
-  const [data, setData] = useState([]);
-  let name, value;
   const handleChange = (event) => {
     name = event.target.name;
     value = event.target.value;
-    setUserDetails({ ...userDetails, [name]: value });
+    setuser({ ...user, [name]: value });
   };
+
+  let name, value;
+
+  const [data, setData] = useState([]);
+
   const navigate = useNavigate();
 
   const handleOnSubmit = (e) => {
     e.preventDefault();
-    dispatch(setTheData([...data, userDetails]));
-    setData([...data, userDetails]);
-    setUserDetails({
+    dispatch(setTheData([...data, user]));
+    setData([...data, user]);
+    setuser({
       name: "",
       username: "",
       email: "",
       password: "",
     });
     if (
-      userDetails.name !== "" &&
-      userDetails.username !== "" &&
-      userDetails.email !== "" &&
-      userDetails.password !== ""
+      user.name !== "" &&
+      user.username !== "" &&
+      user.email !== "" &&
+      user.password !== ""
     ) {
-      navigate("/Login");
+      if (user.email.includes("@")) {
+        navigate("/Login");
+      } else {
+        alert("Enter a valid email");
+      }
     } else {
       alert("Please fill all details");
     }
@@ -61,7 +68,7 @@ function Signup() {
                 className="form-control"
                 name="name"
                 required="required"
-                value={userDetails.name}
+                value={user.name}
                 onChange={handleChange}
               />
             </div>
@@ -74,7 +81,7 @@ function Signup() {
                 className="form-control"
                 name="username"
                 required="required"
-                value={userDetails.username}
+                value={user.username}
                 onChange={handleChange}
               />
             </div>
@@ -87,7 +94,7 @@ function Signup() {
                 className="form-control"
                 name="email"
                 required="required"
-                value={userDetails.email}
+                value={user.email}
                 onChange={handleChange}
               />
             </div>
@@ -100,7 +107,7 @@ function Signup() {
                 className="form-control"
                 name="password"
                 required="required"
-                value={userDetails.password}
+                value={user.password}
                 onChange={handleChange}
               />
             </div>

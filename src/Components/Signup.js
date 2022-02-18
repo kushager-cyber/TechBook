@@ -108,13 +108,6 @@ function Signup() {
 
           <div className="form-group row">
             <div className="col-8 offset-4">
-              <p>
-                <label className="form-check-label">
-                  <input type="checkbox" required="required" /> I accept the{" "}
-                  <a href="/">Terms of Use</a> &amp;{" "}
-                  <a href="/">Privacy Policy</a>.
-                </label>
-              </p>
               <button
                 type="button"
                 className="btn btn-primary btn-lg"

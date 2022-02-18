@@ -46,10 +46,7 @@ function Login(props) {
               onChange={(e) => setpassword(e.target.value)}
             />
           </div>
-          <label className="form-check-label">
-            <input type="checkbox" required="required" /> I accept the{" "}
-            <a href="/">Terms of Use</a> &amp; <a href="/">Privacy Policy</a>.
-          </label>
+
           <div className="form-group">
             <button
               type="button"

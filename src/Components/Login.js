@@ -17,6 +17,8 @@ function Login(props) {
       userDetails.some((Element) => Element.password === password)
     ) {
       navigate("/BooksList");
+    } else if (username === "" && password === "") {
+      alert("Please enter  username and password!!");
     } else {
       alert("Please enter a valid username and password!!");
     }

@@ -12,13 +12,13 @@ function Login(props) {
   const navigate = useNavigate();
 
   const handleOnSubmit = () => {
-    if (
+    if (username === "" && password === "") {
+      alert("Please enter  username and password!!");
+    } else if (
       userDetails.some((Element) => Element.username === username) &&
       userDetails.some((Element) => Element.password === password)
     ) {
       navigate("/BooksList");
-    } else if (username === "" && password === "") {
-      alert("Please enter  username and password!!");
     } else {
       alert("Please enter a valid username and password!!");
     }

@@ -1,118 +1,136 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setTheData } from "../Actions";
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default class SignUp extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      Name: "",
-      Username: "",
-      Email: "",
-      Password: "",
-      action: "",
-    };
+function Signup() {
+  const dispatch = useDispatch();
+  const [userDetails, setUserDetails] = useState({
+    name: "",
+    username: "",
+    email: "",
+    password: "",
+  });
 
-    this.handleFormData = this.handleFormData.bind(this);
-  }
+  const [data, setData] = useState([]);
+  let name, value;
+  const handleChange = (event) => {
+    name = event.target.name;
+    value = event.target.value;
+    setUserDetails({ ...userDetails, [name]: value });
+  };
+  const navigate = useNavigate();
 
-  handleFormData() {
-    localStorage.setItem("Name", this.state.Name);
-    localStorage.setItem("Username", this.state.Username);
-    localStorage.setItem("Email", this.state.Email);
-    localStorage.setItem("Password", this.state.Password);
-
-    this.setState({
-      action: "/Login",
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    dispatch(setTheData([...data, userDetails]));
+    setData([...data, userDetails]);
+    setUserDetails({
+      name: "",
+      username: "",
+      email: "",
+      password: "",
     });
-  }
-  render() {
-    return (
-      <div className="Signup-body">
-        <div className="signup-form">
-          <form className="form-horizontal">
-            <div className="row">
-              <div className="col-8 offset-4">
-                <h2>Sign Up</h2>
-              </div>
-            </div>
-            <div className="form-group row">
-              <label className="col-form-label col-4">Name</label>
-              <div className="col-8">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="name"
-                  required="required"
-                  onChange={(e) => this.setState({ Name: e.target.value })}
-                />
-              </div>
-            </div>
-            <div className="form-group row">
-              <label className="col-form-label col-4">Username</label>
-              <div className="col-8">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="username"
-                  required="required"
-                  onChange={(e) => this.setState({ Username: e.target.value })}
-                />
-              </div>
-            </div>
-            <div className="form-group row">
-              <label className="col-form-label col-4">Email Address</label>
-              <div className="col-8">
-                <input
-                  type="email"
-                  className="form-control"
-                  name="email"
-                  required="required"
-                  onChange={(e) => this.setState({ Email: e.target.value })}
-                />
-              </div>
-            </div>
-            <div className="form-group row">
-              <label className="col-form-label col-4">Password</label>
-              <div className="col-8">
-                <input
-                  type="password"
-                  className="form-control"
-                  name="password"
-                  required="required"
-                  onChange={(e) => this.setState({ Password: e.target.value })}
-                />
-              </div>
-            </div>
+    if (
+      userDetails.name !== "" &&
+      userDetails.username !== "" &&
+      userDetails.email !== "" &&
+      userDetails.password !== ""
+    ) {
+      navigate("/Login");
+    } else {
+      alert("Please fill all details");
+    }
+  };
 
-            <div className="form-group row">
-              <div className="col-8 offset-4">
-                <p>
-                  <label className="form-check-label">
-                    <input
-                      type="checkbox"
-                      required="required"
-                      onClick={this.handleFormData}
-                    />{" "}
-                    I accept the <a href="/">Terms of Use</a> &amp;{" "}
-                    <a href="/">Privacy Policy</a>.
-                  </label>
-                </p>
-                <Link
-                  type="submit"
-                  className="btn btn-primary btn-lg"
-                  to="/Login"
-                >
-                  Sign Up
-                </Link>
-              </div>
-            </div>
-          </form>
-          <div className="text-center">
-            Already have an account? <a href="/">Login here</a>
+  return (
+    <div className="Signup-body">
+      <div className="signup-form">
+        <form className="form-horizontal" onSubmit={handleOnSubmit}>
+          <div className="row"></div>
+          <div className="col-8 offset-4">
+            <h2>Sign Up</h2>
           </div>
+
+          <div className="form-group row">
+            <label className="col-form-label col-4">Name</label>
+            <div className="col-8">
+              <input
+                type="text"
+                className="form-control"
+                name="name"
+                required="required"
+                value={userDetails.name}
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="form-group row">
+            <label className="col-form-label col-4">Username</label>
+            <div className="col-8">
+              <input
+                type="text"
+                className="form-control"
+                name="username"
+                required="required"
+                value={userDetails.username}
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="form-group row">
+            <label className="col-form-label col-4">Email Address</label>
+            <div className="col-8">
+              <input
+                type="email"
+                className="form-control"
+                name="email"
+                required="required"
+                value={userDetails.email}
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+          <div className="form-group row">
+            <label className="col-form-label col-4">Password</label>
+            <div className="col-8">
+              <input
+                type="password"
+                className="form-control"
+                name="password"
+                required="required"
+                value={userDetails.password}
+                onChange={handleChange}
+              />
+            </div>
+          </div>
+
+          <div className="form-group row">
+            <div className="col-8 offset-4">
+              <p>
+                <label className="form-check-label">
+                  <input type="checkbox" required="required" /> I accept the{" "}
+                  <a href="/">Terms of Use</a> &amp;{" "}
+                  <a href="/">Privacy Policy</a>.
+                </label>
+              </p>
+              <button
+                type="button"
+                className="btn btn-primary btn-lg"
+                onClick={handleOnSubmit}
+              >
+                Sign Up
+              </button>
+            </div>
+          </div>
+        </form>
+
+        <div className="text-center">
+          Already have an account? <Link to="/Login">Login here</Link>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
+export default Signup;

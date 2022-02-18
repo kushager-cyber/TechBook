@@ -47,9 +47,9 @@ function Signup() {
   return (
     <div className="Signup-body">
       <div className="signup-form">
-        <form className="form-horizontal" onSubmit={handleOnSubmit}>
+        <form onSubmit={handleOnSubmit}>
           <div className="row"></div>
-          <div className="col-8 offset-4">
+          <div className="col-4 offset-4">
             <h2>Sign Up</h2>
           </div>
 

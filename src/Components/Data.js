@@ -9,7 +9,7 @@ export const books = [
     category: "Hardware ",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
-    available: "currently available",
+    available: " available",
   },
   {
     title: "The Art of 64-Bit Assembly",
@@ -19,7 +19,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781718501089.png",
     url: "https://itbook.store/books/9781718501089",
     category: "Hardware ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -31,7 +31,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781718501751.png",
     url: "https://itbook.store/books/9781718501751",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -43,7 +43,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781718501850.png",
     url: "https://itbook.store/books/9781718501850",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -55,7 +55,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781718501874.png",
     url: "https://itbook.store/books/9781718501874",
     category: "Hacking ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -67,7 +67,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781718501904.png",
     url: "https://itbook.store/books/9781718501904",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -79,7 +79,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781718501928.png",
     url: "https://itbook.store/books/9781718501928",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -91,7 +91,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781718501966.png",
     url: "https://itbook.store/books/9781718501966",
     category: "Operating System ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -103,7 +103,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781718502062.png",
     url: "https://itbook.store/books/9781718502062",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -115,7 +115,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781484271407.png",
     url: "https://itbook.store/books/9781484271407",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -127,7 +127,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781484272046.png",
     url: "https://itbook.store/books/9781484272046",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -140,7 +140,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781484272251.png",
     url: "https://itbook.store/books/9781484272251",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -153,7 +153,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781484272602.png",
     url: "https://itbook.store/books/9781484272602",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -165,7 +165,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781484273944.png",
     url: "https://itbook.store/books/9781484273944",
     category: "Computer Science ",
-    available: "no",
+    available: "not available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -177,7 +177,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781484274613.png",
     url: "https://itbook.store/books/9781484274613",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -190,7 +190,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781484277737.png",
     url: "https://itbook.store/books/9781484277737",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -204,7 +204,7 @@ export const books = [
     image: "https://itbook.store/img/books/1001642413764.png",
     url: "https://itbook.store/books/1001642413764",
     category: "Computer Science ",
-    available: "currently not available",
+    available: " not available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -216,7 +216,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781098105099.png",
     url: "https://itbook.store/books/9781098105099",
     category: "Computer Science ",
-    available: "currently not available",
+    available: " not available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -228,7 +228,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781492054863.png",
     url: "https://itbook.store/books/9781492054863",
     category: "Computer Science ",
-    available: "currently available",
+    available: " available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },
@@ -240,7 +240,7 @@ export const books = [
     image: "https://itbook.store/img/books/9781492063001.png",
     url: "https://itbook.store/books/9781492063001",
     category: "Computer Science ",
-    available: "currently not available",
+    available: " not available",
     Description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
   },

@@ -82,6 +82,7 @@ body {
   font-weight: bold;
   background: #3c82b1;
   border: none;
+  margin-left: 10%;
 }
 .btn:hover,
 .btn:focus {
